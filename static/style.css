@@ -1,4 +1,71 @@
-body,
+* {
+    box-sizing: border-box;
+}
+
 html {
+    font-size: 16px;
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
     background: white;
+    margin: 0;
+}
+
+/* Menu */
+.desktop-menu {
+    display: none;
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .desktop-menu {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 4px;
+    }
+
+    .user-profile a,
+    .desktop-menu a {
+        color: white;
+        text-decoration: none;
+        padding: 0 8px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .user-profile a:hover,
+    .desktop-menu a:hover {
+        color: rgb(58, 109, 22);
+        background: rgb(180, 228, 135);
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
+/* Header */
+.site-header {
+    background: rgb(116, 215, 24);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 12px;
+}
+
+.site-name {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
