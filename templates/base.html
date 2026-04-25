@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>{% block title %} {% endblock%} | Muris</title>
+    <meta name="author" content="Dace" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{% block description %}Default description of Muris page{% endblock%}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}" />
+    <script src="https://kit.fontawesome.com/0689b9e608.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/" title="Home">Home</a>
+            <a href="/vendors" title="Vendors">Vendors</a>
+            <a href="/produce" title="Produce">Produce</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        <h1>This page has no content!</h1>
+        <p>Looks like this page has no content yet!</p>
+        {% endblock%}
+    </main>
+    <footer>
+        Site footer
+    </footer>
+</body>
+
+</html>

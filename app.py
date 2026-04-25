@@ -1,11 +1,21 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def index():
-    return "<h1>This is the index page.</h1>"
+    return render_template("index.html")
+
+
+@app.route("/vendors")
+def vendors():
+    return render_template("vendors.html")
+
+
+@app.route("/produce")
+def produce():
+    return render_template("produce.html")
 
 
 if __name__ == "__main__":
