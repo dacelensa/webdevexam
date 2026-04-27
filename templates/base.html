@@ -14,18 +14,30 @@
 
     <body>
         <header class="site-header">
-            <nav class="desktop-menu">
-                <a href="/" title="Home"><i class="fa-solid fa-seedling"></i></a>
-                <a href="/" title="Home">Home</a>
-                <a href="/vendors" title="Vendors">Vendors</a>
-                <a href="/produce" title="Produce">Produce</a>
-            </nav>
-            <nav class="mobile-menu">
-                <a href="/" title="Home">Home</a>
-                <a href="/vendors" title="Vendors">Vendors</a>
-                <a href="/produce" title="Produce">Produce</a>
-            </nav>
+            <section class="menu-bar">
+                <nav class="desktop-menu">
+                    <a href="/" title="Home"><i class="fa-solid fa-seedling"></i></a>
+                    <a href="/" title="Home">Home</a>
+                    <a href="/vendors" title="Vendors">Vendors</a>
+                    <a href="/produce" title="Produce">Produce</a>
+                </nav>
 
+                <button class="mobile-menu-button" title="Menu" onclick="open_mobile_menu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <nav class="mobile-menu" id="mobile-menu">
+                    <header class="mobile-menu-header">
+                        <span class="mobile-menu-title">Menu</span>
+                        <button class="mobile-menu-close-button" title="Close menu" onclick="close_mobile_menu()">
+                            <i class="fa-solid fa-times"></i>
+                        </button>
+                    </header>
+                    <div class="mobile-menu-line"></div>
+                    <a href="/" title="Home">Home</a>
+                    <a href="/vendors" title="Vendors">Vendors</a>
+                    <a href="/produce" title="Produce">Produce</a>
+                </nav>
+            </section>
             <a href="/" class="site-name" title="Home">Muris buys fruit</a>
 
             <section class="user-profile">
@@ -41,6 +53,15 @@
         <footer>
             Site footer
         </footer>
+
+        <script>
+            function open_mobile_menu() {
+                document.getElementById("mobile-menu").classList.add("visible")
+            }
+            function close_mobile_menu() {
+                document.getElementById("mobile-menu").classList.remove("visible")
+            }
+        </script>
     </body>
 
 </html>
