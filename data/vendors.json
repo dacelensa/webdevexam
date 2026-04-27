@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Jiji's Farm",
+        "location": "Central Jutland",
+        "address": "Egernstien 22, 8400 Ebeltoft",
+        "offer": [
+            {
+                "produce_id": 5,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 7,
+                "is_in_stock": true
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Daisy's Market",
+        "location": "South Jutland",
+        "address": "Nørregade 12A, 6000 Kolding",
+        "offer": [
+            {
+                "produce_id": 2,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 6,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 9,
+                "is_in_stock": true
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Muris Delivery",
+        "location": "Fyn",
+        "address": "Sdr. Boulevard 306, 5000 Odense",
+        "offer": [
+            {
+                "produce_id": 1,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 8,
+                "is_in_stock": true
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Blomsterhaven",
+        "location": "South Jutland",
+        "address": "Østergade 16, 6000 Kolding",
+        "offer": [
+            {
+                "produce_id": 6,
+                "is_in_stock": true
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Kolding Have",
+        "location": "South Jutland",
+        "address": "Christian 4 Vej 23, 6000 Kolding",
+        "offer": [
+            {
+                "produce_id": 1,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 4,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 9,
+                "is_in_stock": true
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Mormor's Frugthave",
+        "location": "Central Jutland",
+        "address": "Vejlevej, 7441 Bording",
+        "offer": [
+            {
+                "produce_id": 3,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 10,
+                "is_in_stock": true
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Sommer Have",
+        "location": "Fyn",
+        "address": "Lergyden 4, 5492 Vissenbjerg",
+        "offer": [
+            {
+                "produce_id": 2,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 3,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 4,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 8,
+                "is_in_stock": true
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Up The Hill Farm",
+        "location": "North Jutland",
+        "address": "Nordre Strandvej 22, 9900 Frederikshavn",
+        "offer": [
+            {
+                "produce_id": 4,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 8,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 9,
+                "is_in_stock": true
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Fyn To Go",
+        "location": "Fyn",
+        "address": "Hindsgavl Alle 7, 5500 Middelfart",
+        "offer": [
+            {
+                "produce_id": 2,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 5,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 7,
+                "is_in_stock": true
+            },
+            {
+                "produce_id": 10,
+                "is_in_stock": true
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Kartoffelelsker",
+        "location": "Zealand",
+        "address": "Gavnø 9, 4700 Næstved",
+        "offer": [
+            {
+                "produce_id": 8,
+                "is_in_stock": true
+            }
+        ]
+    }
+]

@@ -1,0 +1,91 @@
+[
+    {
+        "id": 1,
+        "name": "Pumpkin",
+        "season": [
+            "autumn"
+        ],
+        "image": "produce-pumpkin.png"
+    },
+    {
+        "id": 2,
+        "name": "Strawberry",
+        "season": [
+            "summer"
+        ],
+        "image": "produce-strawberry.png"
+    },
+    {
+        "id": 3,
+        "name": "Apple",
+        "season": [
+            "summer",
+            "autumn"
+        ],
+        "image": "produce-apple.png"
+    },
+    {
+        "id": 4,
+        "name": "Tomato",
+        "season": [
+            "summer"
+        ],
+        "image": "produce-tomato.png"
+    },
+    {
+        "id": 5,
+        "name": "Eggs",
+        "season": [
+            "spring",
+            "summer",
+            "autumn"
+        ],
+        "image": "produce-eggs.png"
+    },
+    {
+        "id": 6,
+        "name": "Flowers",
+        "season": [
+            "spring",
+            "summer",
+            "autumn"
+        ],
+        "image": "produce-flowers.png"
+    },
+    {
+        "id": 7,
+        "name": "Honey",
+        "season": [
+            "spring",
+            "summer",
+            "autumn"
+        ],
+        "image": "produce-honey.png"
+    },
+    {
+        "id": 8,
+        "name": "Potato",
+        "season": [
+            "summer",
+            "autumn"
+        ],
+        "image": "produce-potato.png"
+    },
+    {
+        "id": 9,
+        "name": "Cucumber",
+        "season": [
+            "summer"
+        ],
+        "image": "produce-cucumber.png"
+    },
+    {
+        "id": 10,
+        "name": "Cherry",
+        "season": [
+            "summer",
+            "autumn"
+        ],
+        "image": "produce-cherry.png"
+    }
+]
