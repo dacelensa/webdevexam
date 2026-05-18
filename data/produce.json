@@ -5,7 +5,7 @@
         "season": [
             "autumn"
         ],
-        "image": "produce-pumpkin.png"
+        "image": "pumpkin.png"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "season": [
             "summer"
         ],
-        "image": "produce-strawberry.png"
+        "image": "strawberry.png"
     },
     {
         "id": 3,
@@ -22,7 +22,7 @@
             "summer",
             "autumn"
         ],
-        "image": "produce-apple.png"
+        "image": "apple.png"
     },
     {
         "id": 4,
@@ -30,7 +30,7 @@
         "season": [
             "summer"
         ],
-        "image": "produce-tomato.png"
+        "image": "tomato.png"
     },
     {
         "id": 5,
@@ -40,7 +40,7 @@
             "summer",
             "autumn"
         ],
-        "image": "produce-eggs.png"
+        "image": "egg.png"
     },
     {
         "id": 6,
@@ -50,7 +50,7 @@
             "summer",
             "autumn"
         ],
-        "image": "produce-flowers.png"
+        "image": "flower.png"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
             "summer",
             "autumn"
         ],
-        "image": "produce-honey.png"
+        "image": "honey.png"
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
             "summer",
             "autumn"
         ],
-        "image": "produce-potato.png"
+        "image": "potato.png"
     },
     {
         "id": 9,
@@ -77,7 +77,7 @@
         "season": [
             "summer"
         ],
-        "image": "produce-cucumber.png"
+        "image": "cucumber.png"
     },
     {
         "id": 10,
@@ -86,6 +86,6 @@
             "summer",
             "autumn"
         ],
-        "image": "produce-cherry.png"
+        "image": "cherry.png"
     }
 ]
