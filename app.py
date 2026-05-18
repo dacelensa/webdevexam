@@ -10,12 +10,12 @@ def index():
 
 @app.route("/vendors")
 def vendors():
-    return render_template("vendors.html")
+    return render_template("vendors.html", list_of_vendors=["Vendor 1", "Vendor 2"])
 
 
 @app.route("/produce")
 def produce():
-    return render_template("produce.html")
+    return render_template("produce.html", list_of_produce=["Produce 1", "Produce 2"])
 
 
 if __name__ == "__main__":
