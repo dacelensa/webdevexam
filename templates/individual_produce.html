@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Find vendors{% endblock %}
+
+{% block description %}Description of this page{% endblock %}
+
+{% block content %}
+<section class="welcome">
+    <img alt="{{produce.name}}" src="/static/images/{{produce.image}}" class="welcome-image" />
+    <h1 class="welcome-title">
+        {{produce.name}}
+    </h1>
+</section>
+<section class="list-of-offers">
+    {% for offer in offers_for_produce %}
+    <article class="produce-offer-card">
+        <div class="offer-image-container">
+            <img alt="{{offer.vendor_name}}" src="/static/images/{{offer.vendor_image}}" class="offer-image" />
+        </div>
+        <div class="offer-information">
+            <h2 class="offer-vendor-name">
+                {{offer.vendor_name}}
+            </h2>
+            <span class="offer-vendor-address">
+                <i class="fa-solid fa-location-pin offer-vendor-address-icon"></i>
+                {{offer.vendor_address}}
+            </span>
+            {% if offer.is_in_stock %}
+            <span class="offer-stock">
+                In stock
+            </span>
+            {% endif %}
+            {% if offer.is_in_stock == false %}
+            <span class="offer-stock">
+                Out of stock
+            </span>
+            {% endif %}
+        </div>
+        <div class="offer-map-container">
+            <!--
+            Documentation:
+            https://developers.google.com/maps/documentation/embed/embedding-map#place_mode
+            -->
+            <iframe width="100%" height="100%" frameborder="0" style="border:0"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBl6wt5dYd9xZ0ho5_ZvXlW1BmqBLam_1k&q={{offer.vendor_address}}"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

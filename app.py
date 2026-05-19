@@ -8,6 +8,9 @@ with open("data/produce.json", "r", encoding="utf8") as f:
 with open("data/vendors.json", "r", encoding="utf8") as f:
     all_vendors = json.load(f)
 
+with open("data/offers.json", "r", encoding="utf8") as f:
+    all_offers = json.load(f)
+
 app = Flask(__name__)
 
 
@@ -46,6 +49,30 @@ def produce():
             produce["in_season"] = False
             out_of_season.append(produce)
     return render_template("produce.html", list_of_produce=in_season + out_of_season)
+
+
+@app.route("/produce/<produce_id>")
+def individual_produce(produce_id):
+    offers_for_produce = []
+
+    for i in all_produce:
+        if i["id"] == int(produce_id):
+            produce = i
+
+    for offer in all_offers.copy():
+        if offer["produce_id"] == int(produce_id):
+            for vendor in all_vendors:
+                if vendor["id"] == offer["vendor_id"]:
+                    offer["vendor_name"] = vendor["name"]
+                    offer["vendor_address"] = vendor["address"]
+                    offer["vendor_image"] = vendor["image"]
+            offers_for_produce.append(offer)
+
+    return render_template(
+        "individual_produce.html",
+        offers_for_produce=offers_for_produce,
+        produce=produce,
+    )
 
 
 if __name__ == "__main__":
