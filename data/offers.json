@@ -1,0 +1,127 @@
+[
+    {
+        "vendor_id": 1,
+        "produce_id": 5,
+        "is_in_stock": false
+    },
+    {
+        "vendor_id": 1,
+        "produce_id": 7,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 2,
+        "produce_id": 2,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 2,
+        "produce_id": 6,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 2,
+        "produce_id": 9,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 3,
+        "produce_id": 1,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 3,
+        "produce_id": 8,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 4,
+        "produce_id": 6,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 5,
+        "produce_id": 1,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 5,
+        "produce_id": 4,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 5,
+        "produce_id": 9,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 6,
+        "produce_id": 3,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 6,
+        "produce_id": 10,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 7,
+        "produce_id": 2,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 7,
+        "produce_id": 3,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 7,
+        "produce_id": 4,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 7,
+        "produce_id": 8,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 8,
+        "produce_id": 4,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 8,
+        "produce_id": 8,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 8,
+        "produce_id": 9,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 9,
+        "produce_id": 2,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 9,
+        "produce_id": 5,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 9,
+        "produce_id": 7,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 9,
+        "produce_id": 10,
+        "is_in_stock": true
+    },
+    {
+        "vendor_id": 10,
+        "produce_id": 8,
+        "is_in_stock": true
+    }
+]
