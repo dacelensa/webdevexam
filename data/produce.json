@@ -38,7 +38,8 @@
         "season": [
             "spring",
             "summer",
-            "autumn"
+            "autumn",
+            "winter"
         ],
         "image": "egg.png"
     },
