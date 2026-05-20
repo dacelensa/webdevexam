@@ -75,5 +75,15 @@ def individual_produce(produce_id):
     )
 
 
+@app.route("/apply")
+def apply():
+    return render_template("submission_form.html")
+
+
+@app.route("/apply/submit", methods=["POST"])
+def submit():
+    return render_template("receipt.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)

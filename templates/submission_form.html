@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Apply to be a vendor{% endblock %}
+
+{% block description %}Description of this page{% endblock %}
+
+{% block content %}
+<section class="welcome">
+    <h1 class="welcome-title">
+        Apply to be a vendor!
+    </h1>
+    <p class="welcome-text">
+        [placeholder]
+    </p>
+</section>
+<section class="submission-form-content">
+    <form class="submission-form" method="post" action="/apply/submit">
+        <div class="left-inputs">
+            <fieldset class="form-fieldset"><label class="form-field-label" for="name">Your name:</label>
+                <input class="form-field" placeholder="Jiji's farm" type="text" id="name" name="name" required>
+            </fieldset>
+
+            <fieldset class="form-fieldset"><label class="form-field-label" for="location">Where are you
+                    located?</label>
+                <select class="form-field" id="location" name="location" required>
+                    <option value="Central Jutland">Central Jutland</option>
+                    <option value="South Jutland">South Jutland</option>
+                    <option value="North Jutland">North Jutland</option>
+                    <option value="Fyn">Fyn</option>
+                    <option value="Zealand">Zealand</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="form-fieldset"><label class="form-field-label" for="address">Your address:</label>
+                <input class="form-field" placeholder="Bakkevej 1, 6000 Kolding" type="text" id="address" name="address"
+                    required>
+            </fieldset>
+        </div>
+
+        <div class="right_inputs">
+            <fieldset class="form-fieldset"><label class="form-field-label" for="offer">What products would you like to
+                    offer?</label>
+
+                <input type="checkbox" id="offer-pumpkin" name="offer" value="Pumpkin">
+                <label for="offer-pumpkin">Pumpkins</label><br>
+
+                <input type="checkbox" id="offer-strawberry" name="offer" value="Strawberry">
+                <label for="offer-strawberry">Strawberries</label><br>
+
+                <input type="checkbox" id="offer-apple" name="offer" value="Apple">
+                <label for="offer-apple">Apples</label><br>
+
+                <input type="checkbox" id="offer-tomato" name="offer" value="Tomato">
+                <label for="offer-tomato">Tomatoes</label><br>
+
+                <input type="checkbox" id="offer-eggs" name="offer" value="Eggs">
+                <label for="offer-eggs">Eggs</label><br>
+
+                <input type="checkbox" id="offer-flowers" name="offer" value="Flowers">
+                <label for="offer-flowers">Flowers</label><br>
+
+                <input type="checkbox" id="offer-honey" name="offer" value="Honey">
+                <label for="offer-honey">Honey</label><br>
+
+                <input type="checkbox" id="offer-potato" name="offer" value="Potato">
+                <label for="offer-potato">Potatoes</label><br>
+
+                <input type="checkbox" id="offer-cucumber" name="offer" value="Cucumber">
+                <label for="offer-cucumber">Cucumbers</label><br>
+
+                <input type="checkbox" id="offer-cherry" name="offer" value="Cherry">
+                <label for="offer-cherry">Cherries</label><br>
+            </fieldset>
+        </div>
+
+        <footer class="submit-container">
+            <fieldset class="form-fieldset"><label class="form-field-label" for="comments">Comments</label>
+                <textarea class="form-field form-text-area" rows="3"
+                    placeholder="Any requests? Any products not on the list?" type="text" id="comments"
+                    name="comments"></textarea>
+            </fieldset>
+            <input class="submit-button" type="submit" value="Submit">
+        </footer>
+    </form>
+</section>
+{% endblock %}
