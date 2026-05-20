@@ -2,40 +2,69 @@
 
 {% block title %}Home{% endblock %}
 
-{% block description %}Description of your site{% endblock %}
+{% block description %}Description of site{% endblock %}
 
 {% block content %}
-<section class="welcome">
-    <h1 class="welcome-title">
-        [Dace - say hi]
+<section class="welcome homepage-welcome">
+    <h1 class="content-title">
+        Looking for fresh produce?
     </h1>
-    <p class="welcome-text">
-        [Dace - say longer hi]
-    </p>
+    <div class="content-list-container">
+        <ol class="content-list">
+            <li>Browse our products</li>
+            <li>Find your favourite vendor</li>
+            <li>Visit their garden and purchase your goods!</li>
+        </ol>
+    </div>
+
+
 </section>
 <section class="homepage-hero-section">
     <div class="hero-half" id="explore-vendors">
-        <h2 class="hero-title">
+        <h3 class="hero-title">
             Get to know our
-        </h2>
-        <h3 class="hero-subtitle">
-            Vendors
         </h3>
+        <h2 class="hero-subtitle">
+            Local vendors
+        </h2>
         <a class="hero-link" href="/vendors" title="Vendors">
             FIND VENDORS
         </a>
     </div>
     <div class="hero-half" id="explore-produce">
-        <h2 class="hero-title">
+        <h3 class="hero-title">
             Explore our
-        </h2>
-        <h3 class="hero-subtitle">
-            Local goods
         </h3>
+        <h2 class="hero-subtitle">
+            Local goods
+        </h2>
         <a class="hero-link" href="/produce" title="Produce">
             BROWSE PRODUCE
         </a>
     </div>
 </section>
-
+<section class="homepage-content">
+    <div class="content-text">
+        <p>
+            <i>"Uz laukiem!"</i> - it is both an invitation and a sign for good times ahead!<br>
+            <i>"To the countryside!"</i> - is an invitation for you to swap a trip to the grocery store with a visit to
+            one of our local farmers near you!<br> <br>
+            Our community was formed to support anyone who wished to share extra produce from their garden with others.
+            As a vendor, you can sell your homegrown fruits and vegetables to people that appreciate the fresh produce.
+            As a buyer, you encourage sustainable food sourcing by choosing your local farmers. And you get to treat
+            yourself with the most fresh and delicious fruits and veggies!
+        </p>
+    </div>
+    <div class="submission-cta" id="submit-own">
+        <h3 class="submission-cta-title">
+            Want to sell your products?
+        </h3>
+        <h2 class="submission-cta-subtitle">
+            Apply to be a vendor!
+        </h2>
+        <a class="submission-cta-link" href="/apply" title="Apply to be a vendor">
+            APPLY
+        </a>
+    </div>
+</section>
 {% endblock %}
