@@ -4,69 +4,69 @@
         "name": "Jiji's Farm",
         "location": "Central Jutland",
         "address": "Egernstien 22, 8400 Ebeltoft",
-        "image": "dog-vendor.jpg"
+        "image": "vendor-1.jpg"
     },
     {
         "id": 2,
         "name": "Daisy's Market",
         "location": "South Jutland",
         "address": "Nørregade 12A, 6000 Kolding",
-        "image": "dog-vendor.jpg"
+        "image": "vendor-2.jpg"
     },
     {
         "id": 3,
         "name": "Muris Delivery",
         "location": "Fyn",
         "address": "Sdr. Boulevard 306, 5000 Odense",
-        "image": "dog-vendor.jpg"
+        "image": "vendor-3.jpg"
     },
     {
         "id": 4,
         "name": "Blomsterhaven",
         "location": "South Jutland",
         "address": "Østergade 16, 6000 Kolding",
-        "image": "dog-vendor.jpg"
+        "image": "vendor-4.jpg"
     },
     {
         "id": 5,
         "name": "Kolding Have",
         "location": "South Jutland",
         "address": "Christian 4 Vej 23, 6000 Kolding",
-        "image": "dog-vendor.jpg"
+        "image": "vendor-5.jpg"
     },
     {
         "id": 6,
         "name": "Mormor's Frugthave",
         "location": "Central Jutland",
         "address": "Vejlevej, 7441 Bording",
-        "image": "dog-vendor.jpg"
+        "image": "vendor-6.jpg"
     },
     {
         "id": 7,
         "name": "Sommer Have",
         "location": "Fyn",
         "address": "Lergyden 4, 5492 Vissenbjerg",
-        "image": "dog-vendor.jpg"
+        "image": "vendor-7.jpg"
     },
     {
         "id": 8,
         "name": "Up The Hill Farm",
         "location": "North Jutland",
         "address": "Nordre Strandvej 22, 9900 Frederikshavn",
-        "image": "dog-vendor.jpg"
+        "image": "vendor-8.jpg"
     },
     {
         "id": 9,
         "name": "Fyn To Go",
         "location": "Fyn",
         "address": "Hindsgavl Alle 7, 5500 Middelfart",
-        "image": "dog-vendor.jpg"
+        "image": "vendor-9.jpg"
     },
     {
         "id": 10,
         "name": "Kartoffelelsker",
         "location": "Zealand",
         "address": "Gavnø 9, 4700 Næstved",
-        "image": "dog-vendor.jpg"
+        "image": "vendor-10.jpg"
     }
 ]
