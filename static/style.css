@@ -202,15 +202,15 @@ body {
 }
 
 .hero-title {
-    font-size: 1.35rem;
+    font-size: 1.75rem;
     color: white;
     margin: 0;
 }
 
 .hero-subtitle {
-    font-size: 1.75rem;
+    font-size: 1.35rem;
     color: white;
-    margin: 0;
+    font-weight: bold;
 }
 
 
@@ -677,6 +677,15 @@ body {
     align-items: flex-start;
 }
 
+.vendor-produce-title {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.vendor-produce-list {
+    margin: 0;
+}
+
 .vendor-name {
     margin: 0;
 }
@@ -710,6 +719,7 @@ body {
 
     .vendor-information {
         padding: 10px;
+        gap: 6px;
     }
 
     .vendor-name {
@@ -720,5 +730,35 @@ body {
         font-size: 0.8rem;
     }
 
+    .vendor-produce-title {
+        margin-top: 8px;
+        font-size: 1rem;
+    }
 
+    .vendor-produce-list {
+        font-size: 0.8rem;
+    }
+}
+
+.back-button-container {
+    width: 100%;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.back-button {
+    text-decoration: none;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px;
+    color: rgb(52, 50, 50);
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+.individual-product-welcome {
+    margin-top: 10px;
 }
