@@ -5,5 +5,38 @@
 {% block description %}Description of this page{% endblock %}
 
 {% block content %}
-<h1>Vendors!</h1>
+<section class="welcome">
+    <h1 class="welcome-title">
+        Find vendors
+    </h1>
+</section>
+<section class="list-of-vendors">
+    {% for vendor in list_of_vendors %}
+    <article class="vendor-card">
+        <div class="vendor-image-container">
+            <img alt="{{vendor.name}}" src="/static/images/{{vendor.image}}" class="vendor-image" />
+        </div>
+        <div class="vendor-information">
+            <h2 class="vendor-name">
+                {{vendor.name}}
+            </h2>
+            <span class="vendor-address">
+                <i class="fa-solid fa-location-pin vendor-address-icon"></i>
+                {{vendor.address}}
+            </span>
+        </div>
+        <div class="vendor-map-container">
+            <!--
+            Documentation:
+            https://developers.google.com/maps/documentation/embed/embedding-map#place_mode
+            -->
+            <iframe width="100%" height="100%" frameborder="0" style="border:0"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBl6wt5dYd9xZ0ho5_ZvXlW1BmqBLam_1k&q={{vendor.address}}"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </article>
+    {% endfor %}
+</section>
 {% endblock %}

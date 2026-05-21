@@ -33,7 +33,7 @@ def index():
 
 @app.route("/vendors")
 def vendors():
-    return render_template("vendors.html", list_of_vendors=["Vendor 1", "Vendor 2"])
+    return render_template("vendors.html", list_of_vendors=all_vendors)
 
 
 @app.route("/produce")
