@@ -2,22 +2,21 @@
 
 {% block title %}Home{% endblock %}
 
-{% block description %}Description of site{% endblock %}
-
 {% block content %}
-<section class="welcome">
+
+<header class="welcome">
     <h1 class="welcome-title">
         What's in season?
     </h1>
     <p class="welcome-text">
         Browse through our local products and find a farmer's market near you!</p>
-</section>
+</header>
 <section class="homepage-hero-section">
     <div class="hero-half" id="explore-vendors">
-        <h3 class="hero-title">
+        <span class="hero-subtitle">
             Get to know our
-        </h3>
-        <h2 class="hero-subtitle">
+        </span>
+        <h2 class="hero-title">
             Local vendors
         </h2>
         <a class="hero-link" href="/vendors" title="Vendors">
@@ -25,10 +24,10 @@
         </a>
     </div>
     <div class="hero-half" id="explore-produce">
-        <h3 class="hero-title">
+        <span class="hero-subtitle">
             Explore our
-        </h3>
-        <h2 class="hero-subtitle">
+        </span>
+        <h2 class="hero-title">
             Local goods
         </h2>
         <a class="hero-link" href="/produce" title="Produce">
@@ -36,40 +35,41 @@
         </a>
     </div>
 </section>
-<section class="homepage-content">
-    <div class="content-text">
+<article class="homepage-content">
+    <section id="what-do-we-do">
         <p class="content-text">
             <i>"Uz laukiem!"</i> - it is both an invitation and a sign for good times ahead!<br>
             <i>"To the countryside!"</i> - is an invitation for you to swap a trip to the grocery store with a visit to
             one of our local Danish farmers near you!<br> <br>
         </p>
+    </section>
+
+    <section id="how-it-works">
         <h2 class="content-title">
             Looking for fresh produce?
         </h2>
-    </div>
-    <div class="content-list-container">
-        <ol class="content-list">
-            <i>
-                <li>Browse our products</li>
-            </i>
-            <i>
-                <li>Find your favourite vendor</li>
-            </i>
-            <i>
-                <li>Visit their garden and purchase your goods!</li>
-            </i>
-        </ol>
-    </div>
-    <div class="content-text">
+        <div class="content-list-container">
+
+            <ol class="content-list">
+                <li><i>Browse our products</i></li>
+                <li><i>Find your favourite vendor</i></li>
+                <li><i>Visit their garden and purchase your goods!</i></li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="about-the-site">
         <p class="content-text">
-            Our community was formed to support anyone who wished to share extra produce from their garden with others.
+            Our community was formed to support anyone who wished to share extra produce from their garden with
+            others.
             <br>As a vendor, you can sell your homegrown fruits and vegetables to people that appreciate the fresh
             produce.
             As a buyer, you encourage sustainable food sourcing by choosing your local farmers. And you get to treat
             yourself with the most fresh and delicious fruits and veggies!
         </p>
-    </div>
-    <div class="submission-cta" id="submit-own">
+    </section>
+
+    <section class="submission-cta" id="submit-own">
         <h3 class="submission-cta-title">
             Want to sell your products?
         </h3>
@@ -79,6 +79,6 @@
         <a class="submission-cta-link" href="/apply" title="Apply to be a vendor">
             APPLY
         </a>
-    </div>
-</section>
+    </section>
+</article>
 {% endblock %}

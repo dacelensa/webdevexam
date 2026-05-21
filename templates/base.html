@@ -2,16 +2,27 @@
 
     <head>
         <title>{% block title %} {% endblock%} | Uz laukiem</title>
+        <meta charset="utf-8" />
         <meta name="author" content="Dace" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description"
-            content="{% block description %}Uz laukiem is a Danish community-centered platform for the sale and purchase of locally produced goods{% endblock%}" />
+            content="Uz laukiem is a Danish community-centered platform for the sale and purchase of locally produced goods" />
+
+        <!--
+        Google Fonts: https://fonts.google.com/selection/embed
+        -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+        <!--
+        Font Awesome: https://docs.fontawesome.com/web/setup/get-started
+        -->
+        <script src="https://kit.fontawesome.com/0689b9e608.js" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}" />
         <link rel="icon" type="image/png" href="{{ url_for('static', filename = 'images/strawberry.png') }}" />
-        <script src="https://kit.fontawesome.com/0689b9e608.js" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename = 'functions.js') }}"></script>
     </head>
 
     <body>
@@ -51,9 +62,8 @@
         <main class="site-content">
             {% block content %}
             <h1>This page has no content!</h1>
-            <p>Looks like this page has no content yet!</p>'
-
-            {% endblock%}
+            <p>Looks like this page has no content yet!</p>
+            {% endblock %}
         </main>
         <footer class="site-footer">
             <ul class="footer-text">
@@ -63,15 +73,6 @@
                 EST. 2026
             </ul>
         </footer>
-
-        <script>
-            function open_mobile_menu() {
-                document.getElementById("mobile-menu").classList.add("visible")
-            }
-            function close_mobile_menu() {
-                document.getElementById("mobile-menu").classList.remove("visible")
-            }
-        </script>
     </body>
 
 </html>
