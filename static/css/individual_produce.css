@@ -1,0 +1,126 @@
+.back-button-container {
+    width: 100%;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.back-button {
+    text-decoration: none;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px;
+    color: rgb(52, 50, 50);
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+.individual-product-welcome {
+    margin-top: 10px;
+}
+
+.list-of-offers {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.produce-offer-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 16px;
+    border-radius: 8px;
+    border: 5px solid #f3df87;
+    text-decoration: none;
+    color: rgb(17, 12, 12);
+    position: relative;
+    align-items: center;
+}
+
+.offer-image-container {
+    aspect-ratio: 1;
+    padding: 10px;
+}
+
+.offer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.offer-information {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.offer-vendor-name {
+    margin: 0;
+}
+
+.offer-vendor-address-icon {
+    color: rgb(58, 109, 22)
+}
+
+.offer-stock {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: lighter;
+    top: 9px;
+    right: 9px;
+    position: absolute;
+    background: rgb(191, 212, 179);
+}
+
+.offer-map-container {
+    aspect-ratio: 1;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .produce-offer-card {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        row-gap: 4px;
+        column-gap: 0;
+    }
+
+    .offer-map-container {
+        padding-top: 0;
+        grid-column: 1 /-1;
+        aspect-ratio: 2/1;
+    }
+
+    .offer-stock {
+        position: relative;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+
+    .offer-information {
+        padding: 10px;
+    }
+
+    .offer-vendor-name {
+        font-size: 1.2rem;
+    }
+
+    .offer-vendor-address {
+        font-size: 0.8rem;
+    }
+
+
+}

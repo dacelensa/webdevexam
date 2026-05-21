@@ -1,0 +1,52 @@
+.produce_card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    border: 5px solid #f3df87;
+    text-decoration: none;
+    color: rgb(17, 12, 12);
+    position: relative;
+}
+
+.produce-in-season {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: lighter;
+    top: 9px;
+    right: 9px;
+    position: absolute;
+    background: rgb(191, 212, 179);
+}
+
+.produce-name {
+    font-size: 1rem;
+    color: rgb(17, 12, 12);
+    margin: 0;
+}
+
+.list-of-produce {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.produce-image {
+    width: 96px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .list-of-produce {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .produce_card {
+        aspect-ratio: auto;
+        padding: 12px;
+    }
+}

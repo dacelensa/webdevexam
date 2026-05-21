@@ -3,6 +3,7 @@
 {% block title %}{{produce.name}}{% endblock %}
 
 {% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/individual_produce.css') }}" />
 <header class="welcome individual-product-welcome">
     <div class="back-button-container">
         <a class="back-button" title="Back to list of produce" href="/produce">
