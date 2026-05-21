@@ -28,7 +28,7 @@
 .left-inputs {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
 }
 
 .submit-container {
@@ -90,6 +90,13 @@
 
     .submit-container {
         grid-column: 1/2;
-
     }
+
+    .left-inputs {
+        gap: 16px;
+    }
+}
+
+.form-checkbox {
+    margin: 8px;
 }
