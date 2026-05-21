@@ -2,14 +2,12 @@
 
 {% block title %}Find vendors{% endblock %}
 
-{% block description %}Description of this page{% endblock %}
-
 {% block content %}
-<section class="welcome">
+<header class="welcome">
     <h1 class="welcome-title">
         Find vendors
     </h1>
-</section>
+</header>
 <section class="list-of-vendors">
     {% for vendor in list_of_vendors %}
     <article class="vendor-card">
@@ -24,6 +22,12 @@
                 <i class="fa-solid fa-location-pin vendor-address-icon"></i>
                 {{vendor.address}}
             </span>
+            <h3 class="vendor-produce-title">This vendor offers</h3>
+            <ul class="vendor-produce-list">
+                {% for produce_name in vendor.produce_names %}
+                <li>{{produce_name}}</li>
+                {% endfor %}
+            </ul>
         </div>
         <div class="vendor-map-container">
             <!--
