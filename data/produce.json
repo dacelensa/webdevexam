@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Pumpkin",
+        "name": "Pumpkins",
         "season": [
             "autumn"
         ],
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "name": "Strawberry",
+        "name": "Strawberries",
         "season": [
             "summer"
         ],
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "name": "Apple",
+        "name": "Apples",
         "season": [
             "summer",
             "autumn"
@@ -26,7 +26,7 @@
     },
     {
         "id": 4,
-        "name": "Tomato",
+        "name": "Tomatoes",
         "season": [
             "summer"
         ],
@@ -65,7 +65,7 @@
     },
     {
         "id": 8,
-        "name": "Potato",
+        "name": "Potatoes",
         "season": [
             "summer",
             "autumn"
@@ -74,7 +74,7 @@
     },
     {
         "id": 9,
-        "name": "Cucumber",
+        "name": "Cucumbers",
         "season": [
             "summer"
         ],
@@ -82,7 +82,7 @@
     },
     {
         "id": 10,
-        "name": "Cherry",
+        "name": "Cherries",
         "season": [
             "summer",
             "autumn"
