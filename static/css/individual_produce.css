@@ -39,6 +39,10 @@
     align-items: center;
 }
 
+.produce-offer-card.hidden {
+    display: none;
+}
+
 .offer-image-container {
     aspect-ratio: 1;
     padding: 10px;
@@ -123,4 +127,11 @@
     }
 
 
+}
+
+.list-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-end;
 }

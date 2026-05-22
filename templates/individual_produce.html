@@ -17,8 +17,14 @@
     </h1>
 </header>
 <section class="list-of-offers">
+    <header class="list-header">
+        <input type="checkbox" id="show-only-in-stock" name="show-only-in-stock" title="Show only items in stock" />
+        <label for="show-only-in-stock" class="show-only-in-stock-label">
+            Only in stock
+        </label>
+    </header>
     {% for offer in offers_for_produce %}
-    <article class="produce-offer-card">
+    <article class="produce-offer-card {% if offer.is_in_stock == false %} out-of-stock {% endif %}">
         <div class="offer-image-container">
             <img alt="{{offer.vendor_name}}" src="/static/images/{{offer.vendor_image}}" class="offer-image" />
         </div>
@@ -55,4 +61,7 @@
     </article>
     {% endfor %}
 </section>
+<script>
+    document.getElementById("show-only-in-stock").addEventListener("change", filter_in_stock_produce)
+</script>
 {% endblock %}
